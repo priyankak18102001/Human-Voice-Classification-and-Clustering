@@ -1,12 +1,10 @@
-# Human-Voice-Classification-and-Clustering
-Streamlit app for classifying and clustering human voice using ML.
 # 🎤 Human Voice Classification & Clustering (Streamlit App)
 
 This project predicts the **gender of a speaker** and **clusters similar voice samples** using machine learning on pre-extracted **numerical features** (e.g., pitch, spectral features, MFCCs).
 
 The app is built with **Streamlit** and has a simple navigation layout:
 
-1. **Introduction** – brief overview of the project  
+1. **Introduction**  brief overview of the project  
 2. **EDA Summary** – explains the exploratory data analysis performed  
 3. **Prediction & Clustering** – manual input of features to get:
    - **Gender prediction** (Male/Female) using SVM  
@@ -30,25 +28,6 @@ This can be useful in:
 - Pre-processing for downstream speech tasks  
 
 ---
-Classification – Support Vector Machine (SVM)
-
-Input: ~14–20 scaled numerical features (e.g., mean_pitch, spectral features, MFCC stats)
-Output: 0 = Female, 1 = Male
-Trained on selected features after feature selection & scaling.
-Evaluated using:
-Accuracy
-Precision
-Recall
-F1-score
-Confusion matrix
-****
-Clustering – KMeans
-
-Input: same feature space as classifier (scaled features)
-Output: cluster labels (e.g., Cluster 0, 1, 2, …)
-Evaluated using:
-Silhouette score
-Cluster size distribution
 
 ## 🏗️ Project Structure
 

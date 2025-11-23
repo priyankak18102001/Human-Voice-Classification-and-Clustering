@@ -18,10 +18,10 @@ except Exception:
     UAMP = False
 
 # ----------------- CONFIG: update filenames if needed -----------------
-MODEL_PATH = "models/best_model_svm.joblib"
-KMEANS_PATH = "models/kmeans_best.joblib"
-SCALER_PATH = "models/scaler_20_features.joblib"
-FEATURES_PATH = "models/selected_features_20.pkl"
+MODEL_PATH = "best_model_svm.joblib"
+KMEANS_PATH = "kmeans_best.joblib"
+SCALER_PATH = "scaler_20_features.joblib"
+FEATURES_PATH = "selected_features_20.pkl"
 #PROJECT_PDF = "C:/Users/PRIYANKA/OneDrive/Desktop/Human_voice_model/Human_voice_classification_and_clustring (1).ipynb" # project doc path
 PROJECT_PDF =  "Human_voice_classification_and_clustring (1).ipynb"
 
@@ -263,6 +263,7 @@ elif page == "Prediction & Clustering":
 
 
               
+
 
 
 

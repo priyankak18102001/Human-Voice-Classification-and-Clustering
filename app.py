@@ -6,6 +6,17 @@ import seaborn as sns
 import joblib 
 from pathlib import Path
 import librosa, tempfile
+import pickle
+
+BASE_DIR = Path(__file__).parent  # folder where app.py lives
+FEATURE_PATH = BASE_DIR / "models" / "selected_features_20.pkl"
+
+if not FEATURE_PATH.exists():
+    st.error("Feature list not found. Make sure models/selected_features_20.pkl exists.")
+else:
+    with open(FEATURE_PATH, "rb") as f:
+        selected_features = pickle.load(f)
+
 
 # Dimensionality reduction
 from sklearn.decomposition import PCA
@@ -263,6 +274,7 @@ elif page == "Prediction & Clustering":
 
 
               
+
 
 
 

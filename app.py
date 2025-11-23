@@ -83,7 +83,7 @@ if page == "Introduction":
 elif page == "EDA":
     st.header("Exploratory Data Analysis (EDA)")
     st.markdown("Upload your dataset (CSV) containing the feature columns & optional `label` column to run EDA.")
-    path = "C:/Users/PRIYANKA/OneDrive/Desktop/Human_voice_model/vocal_gender_features_new.csv"
+    path = "vocal_gender_features_new.csv"
     if path is not  None:
         df = pd.read_csv(path)
         df.columns = df.columns.str.strip()
@@ -261,4 +261,5 @@ elif page == "Prediction & Clustering":
 
 
               
+
 
